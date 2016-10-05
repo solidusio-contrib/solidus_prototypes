@@ -1,5 +1,21 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: Hello world
+  activerecord:
+    attributes:
+      spree/prototype:
+        name: Name
+    models:
+      # LegacyUser maps to this model_name so we want to provide translations for it
+      spree/prototype:
+        one: Prototype
+        other: Prototypes
+
+  spree:
+    admin:
+      tab:
+        prototypes: Prototypes
+    back_to_prototypes_list: Back To Prototypes List
+    editing_prototype: Editing Prototype
+    new_prototype: New Prototype
+    prototype: Prototype
+    prototypes: Prototypes
+    select_from_prototype: Select From Prototype
