@@ -1,6 +1,8 @@
+require 'spree/testing_support/factories/property_factory'
+
 FactoryGirl.define do
-  # Define your Spree extensions Factories within this file to enable applications, and other extensions to use and override them.
-  #
-  # Example adding this to your spec_helper will load these Factories for use:
-  # require 'solidus_prototype/factories'
+  factory :prototype, class: Spree::Prototype do
+    name 'Baseball Cap'
+    properties { [create(:property)] }
+  end
 end
