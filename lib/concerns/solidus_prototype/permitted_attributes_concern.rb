@@ -3,7 +3,7 @@ module SolidusPrototype
     extend ActiveSupport::Concern
 
     included do
-      self.product_attributes << :prototype_id
+      product_attributes << :prototype_id
     end
 
     module ClassMethods

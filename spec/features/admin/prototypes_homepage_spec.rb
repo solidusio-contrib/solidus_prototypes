@@ -14,5 +14,4 @@ describe "Homepage with prototypes extension", type: :feature do
       end
     end
   end
-
 end
