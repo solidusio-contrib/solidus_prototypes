@@ -1,1 +1,1 @@
-Spree::OptionType.include SolidusPrototype::OptionTypePrototypeConcern
+Spree::OptionType.include SolidusPrototypes::OptionTypePrototypeConcern

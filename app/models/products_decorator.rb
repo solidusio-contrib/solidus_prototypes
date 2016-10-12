@@ -1,1 +1,1 @@
-Spree::Product.include SolidusPrototype::ProductPrototypeConcern
+Spree::Product.include SolidusPrototypes::ProductPrototypeConcern

@@ -1,4 +1,4 @@
-module SolidusPrototype
+module SolidusPrototypes
   module PrototypeProductDisplayPermissionConcern
     def activate!
       super

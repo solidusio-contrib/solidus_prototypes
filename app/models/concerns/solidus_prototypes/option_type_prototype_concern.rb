@@ -1,4 +1,4 @@
-module SolidusPrototype
+module SolidusPrototypes
   module OptionTypePrototypeConcern
     extend ActiveSupport::Concern
 

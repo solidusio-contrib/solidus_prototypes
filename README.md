@@ -1,4 +1,4 @@
-SolidusPrototype
+SolidusPrototypes
 ================
 
 Prototype extension for Solidus.
@@ -6,17 +6,17 @@ Prototype extension for Solidus.
 Installation
 ------------
 
-Add solidus_prototype to your Gemfile:
+Add solidus_prototypes to your Gemfile:
 
 ```ruby
-gem 'solidus_prototype'
+gem 'solidus_prototypes'
 ```
 
 Bundle your dependencies and run the installation generator:
 
 ```shell
 bundle
-bundle exec rails g solidus_prototype:install
+bundle exec rails g solidus_prototypes:install
 ```
 
 Testing
@@ -33,7 +33,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'solidus_prototype/factories'
+require 'solidus_prototypes/factories'
 ```
 
 Copyright (c) 2016 Solidus, released under the New BSD License

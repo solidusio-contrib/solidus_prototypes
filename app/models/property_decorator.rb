@@ -1,1 +1,1 @@
-Spree::Property.include SolidusPrototype::PropertyPrototypeConcern
+Spree::Property.include SolidusPrototypes::PropertyPrototypeConcern

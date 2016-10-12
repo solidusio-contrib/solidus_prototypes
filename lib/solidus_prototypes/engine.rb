@@ -1,8 +1,8 @@
-module SolidusPrototype
+module SolidusPrototypes
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'solidus_prototype'
+    engine_name 'solidus_prototypes'
 
     config.autoload_paths += %W(#{config.root}/lib/concerns)
     # use rspec for tests

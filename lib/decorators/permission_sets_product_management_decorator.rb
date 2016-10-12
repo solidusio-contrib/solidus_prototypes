@@ -1,1 +1,1 @@
-Spree::PermissionSets::ProductManagement.prepend SolidusPrototype::PrototypeProductManagementPermissionConcern
+Spree::PermissionSets::ProductManagement.prepend SolidusPrototypes::PrototypeProductManagementPermissionConcern

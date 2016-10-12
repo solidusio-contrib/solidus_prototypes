@@ -1,1 +1,1 @@
-Spree::Taxon.include SolidusPrototype::TaxonPrototypeConcern
+Spree::Taxon.include SolidusPrototypes::TaxonPrototypeConcern

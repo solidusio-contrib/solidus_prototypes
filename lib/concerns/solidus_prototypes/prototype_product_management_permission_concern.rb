@@ -1,4 +1,4 @@
-module SolidusPrototype
+module SolidusPrototypes
   module PrototypeProductManagementPermissionConcern
     def activate!
       can :manage, Spree::Prototype

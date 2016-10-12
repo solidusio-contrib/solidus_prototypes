@@ -1,4 +1,4 @@
-module SolidusPrototype
+module SolidusPrototypes
   module ProductsLoaderConcern
     extend ActiveSupport::Concern
 

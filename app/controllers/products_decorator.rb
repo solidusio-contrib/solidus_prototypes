@@ -1,1 +1,1 @@
-Spree::Admin::ProductsController.include SolidusPrototype::ProductsLoaderConcern
+Spree::Admin::ProductsController.include SolidusPrototypes::ProductsLoaderConcern

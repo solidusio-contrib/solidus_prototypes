@@ -1,10 +1,10 @@
 # encoding: UTF-8
 $:.push File.expand_path('../lib', __FILE__)
-require 'solidus_prototype/version'
+require 'solidus_prototypes/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'solidus_prototype'
-  s.version     = SolidusPrototype::VERSION
+  s.name        = 'solidus_prototypes'
+  s.version     = SolidusPrototypes::VERSION
   s.summary     = 'Adds prototypes for solidus'
   s.description = 'Breaking out prototypes from solidus'
   s.license     = 'BSD-3-Clause'

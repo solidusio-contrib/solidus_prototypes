@@ -1,1 +1,1 @@
-Spree::PermissionSets::ProductDisplay.prepend SolidusPrototype::PrototypeProductDisplayPermissionConcern
+Spree::PermissionSets::ProductDisplay.prepend SolidusPrototypes::PrototypeProductDisplayPermissionConcern

@@ -1,1 +1,1 @@
-Spree::PermittedAttributes.include SolidusPrototype::PermittedAttributesConcern
+Spree::PermittedAttributes.include SolidusPrototypes::PermittedAttributesConcern
