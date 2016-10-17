@@ -1,8 +1,9 @@
 sudo: false
 cache: bundler
 language: ruby
-bundler_args: --quiet
-script:
-  - bundle exec rake
 rvm:
-  - 2.1.5
+  - 2.3.1
+env:
+  matrix:
+    - SOLIDUS_BRANCH=master DB=postgres
+    - SOLIDUS_BRANCH=master DB=mysql
