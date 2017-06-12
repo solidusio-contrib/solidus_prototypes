@@ -10,7 +10,6 @@ elsif branch >= "v2.0"
   gem 'rails', '~> 5.0.0' # HACK: broken bundler dependency resolution
 end
 
-
 gem 'mysql2'
 gem 'pg'
 
