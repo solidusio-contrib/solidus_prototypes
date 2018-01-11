@@ -11,6 +11,6 @@ elsif branch >= "v2.0"
 end
 
 gem 'mysql2'
-gem 'pg'
+gem 'pg', '~> 0.21'
 
 gemspec
