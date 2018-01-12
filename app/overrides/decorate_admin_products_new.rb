@@ -13,3 +13,11 @@ Deface::Override.new(
   disabled: false,
   partial: "spree/admin/prototypes/products_new_clearfix"
 )
+
+Deface::Override.new(
+  virtual_path: "spree/admin/products/_form",
+  name: "prototypes_admin_products_form",
+  insert_before: "[data-hook='admin_product_form_taxons']",
+  disabled: false,
+  partial: "spree/admin/prototypes/products_form"
+)

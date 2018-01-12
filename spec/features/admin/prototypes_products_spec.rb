@@ -49,10 +49,7 @@ describe "Products", type: :feature do
         @property_prototype = create(:prototype, name: "Random")
         @shipping_category = create(:shipping_category)
         click_nav "Products"
-        click_link "admin_new_product"
-        within('#new_product') do
-          expect(page).to have_content("SKU")
-        end
+        click_link "New Product"
       end
 
       it "should allow an admin to create a new product and variants from a prototype", js: true do
