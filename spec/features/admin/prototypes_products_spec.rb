@@ -72,19 +72,6 @@ describe "Products", type: :feature do
 
         expect(page).not_to have_content("Variants")
       end
-
-      it "should keep option values selected if validation fails", js: true do
-        fill_in "product_name", with: "Baseball Cap"
-        fill_in "product_sku", with: "B100"
-        fill_in "product_price", with: "100"
-        select "Size", from: "Prototype"
-        check "Large"
-        click_button "Create"
-        expect(page).to have_content("Shipping category can't be blank")
-        expect(field_labeled("Size")).to be_checked
-        expect(field_labeled("Large")).to be_checked
-        expect(field_labeled("Small")).not_to be_checked
-      end
     end
 
     context 'updating a product', js: true do
