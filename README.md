@@ -9,7 +9,7 @@ Installation
 Add solidus_prototypes to your Gemfile:
 
 ```ruby
-gem 'solidus_prototypes'
+gem 'solidus_prototypes', github: 'solidusio-contrib/solidus_prototypes', branch: 'master'
 ```
 
 Bundle your dependencies and run the installation generator:
