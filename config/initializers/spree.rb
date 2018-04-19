@@ -5,4 +5,3 @@ Spree::Backend::Config.configure do |config|
     condition: -> { can?(:admin, Spree::Prototype) }
   )
 end
-
