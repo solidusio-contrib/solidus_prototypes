@@ -3,6 +3,8 @@ cache: bundler
 language: ruby
 rvm:
   - 2.5
+before_install:
+    - gem update --system 2.7.4
 env:
   matrix:
     - SOLIDUS_BRANCH=v2.1 DB=postgres
