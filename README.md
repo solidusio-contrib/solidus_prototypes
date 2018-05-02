@@ -1,6 +1,8 @@
 SolidusPrototypes
 ================
 
+[![Build Status](https://travis-ci.org/solidusio-contrib/solidus_prototypes.svg?branch=master)](https://travis-ci.org/solidusio-contrib/solidus_prototypes)
+
 Prototype extension for Solidus.
 
 Installation
