@@ -10,7 +10,18 @@ elsif branch >= "v2.0"
   gem 'rails', '~> 5.0.0' # HACK: broken bundler dependency resolution
 end
 
-gem 'mysql2'
-gem 'pg', '~> 0.21'
+if ENV['DB'] == 'mysql'
+  gem 'mysql2'
+else
+  gem 'pg', '~> 0.21'
+end
+
+group :test do
+  if branch < "v2.5"
+    gem 'factory_bot', '4.10.0'
+  else
+    gem 'factory_bot', '> 4.10.0'
+  end
+end
 
 gemspec
