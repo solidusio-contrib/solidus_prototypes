@@ -99,10 +99,8 @@ describe "Prototypes", type: :feature do
     click_link "Prototypes"
 
     within("#spree_prototype_#{shirt_prototype.id}") do
-      page.find('.delete-resource').click
+      accept_confirm { find('.delete-resource').click }
     end
-
-    page.evaluate_script('window.confirm = function() { return true; }')
 
     expect(page).to have_content("Prototype \"#{shirt_prototype.name}\" has been successfully removed!")
   end
