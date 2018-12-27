@@ -56,9 +56,9 @@ describe "Products", type: :feature do
         fill_in "product_name", with: "Baseball Cap"
         fill_in "product_sku", with: "B100"
         fill_in "product_price", with: "100"
-        fill_in "product_available_on", with: "2012/01/24"
         select "Size", from: "Prototype"
         check "Large"
+        fill_in "product_available_on", with: "2012/01/24"
         select @shipping_category.name, from: "product_shipping_category_id"
         click_button "Create"
         expect(page).to have_content("successfully created!")
