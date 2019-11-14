@@ -4,18 +4,13 @@ branch = ENV.fetch('SOLIDUS_BRANCH', 'master')
 gem 'solidus', git: 'https://github.com/solidusio/solidus.git', branch: branch
 gem 'solidus_auth_devise'
 
-if ENV['DB'] == 'mysql'
+case ENV['DB']
+when 'mysql'
   gem 'mysql2'
+when 'postgresql'
+  gem 'pg'
 else
-  gem 'pg', '~> 0.21'
-end
-
-group :test do
-  if branch < "v2.5"
-    gem 'factory_bot', '4.10.0'
-  else
-    gem 'factory_bot', '> 4.10.0'
-  end
+  gem 'sqlite3'
 end
 
 gemspec

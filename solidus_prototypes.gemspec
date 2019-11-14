@@ -31,5 +31,4 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'selenium-webdriver'
   s.add_development_dependency 'simplecov'
   s.add_development_dependency 'solidus_support'
-  s.add_development_dependency 'sqlite3'
 end
