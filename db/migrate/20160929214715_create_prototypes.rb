@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreatePrototypes < ActiveRecord::Migration[5.0]
   def change
     unless data_source_exists?("spree_prototypes")

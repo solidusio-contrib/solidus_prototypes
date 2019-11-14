@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe "Products", type: :feature do
   context "as admin user" do
     stub_authorization!
 
-    before(:each) do
+    before do
       visit spree.admin_path
     end
 
@@ -44,7 +46,7 @@ describe "Products", type: :feature do
         hash
       end
 
-      before(:each) do
+      before do
         @option_type_prototype = prototype
         @property_prototype = create(:prototype, name: "Random")
         @shipping_category = create(:shipping_category)
@@ -52,7 +54,7 @@ describe "Products", type: :feature do
         click_link "New Product"
       end
 
-      it "should allow an admin to create a new product and variants from a prototype", js: true do
+      it "allows an admin to create a new product and variants from a prototype", js: true do
         fill_in "product_name", with: "Baseball Cap"
         fill_in "product_sku", with: "B100"
         fill_in "product_price", with: "100"
@@ -65,7 +67,7 @@ describe "Products", type: :feature do
         expect(Spree::Product.last.variants.length).to eq(1)
       end
 
-      it "should not display variants when prototype does not contain option types", js: true do
+      it "does not display variants when prototype does not contain option types", js: true do
         select "Random", from: "Prototype"
 
         fill_in "product_name", with: "Baseball Cap"
@@ -82,12 +84,12 @@ describe "Products", type: :feature do
         FactoryBot.create(:prototype, name: "Size", option_types: [size])
       end
 
-      before(:each) do
+      before do
         @option_type_prototype = prototype
         @property_prototype = create(:prototype, name: "Random")
       end
 
-      it 'should add option_types when selecting a prototype' do
+      it 'adds option_types when selecting a prototype' do
         visit spree.admin_product_path(product)
         click_link 'Product Properties'
         expect(page).to have_content("Select From Prototype")
@@ -118,7 +120,7 @@ describe "Products", type: :feature do
     end
     let!(:product) { create(:product) }
 
-    it "should only display accessible links on index" do
+    it "onlies display accessible links on index" do
       visit spree.admin_products_path
       expect(page).not_to have_link('Prototypes')
     end

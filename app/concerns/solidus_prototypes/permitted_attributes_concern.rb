@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module SolidusPrototypes
   module PermittedAttributesConcern
     extend ActiveSupport::Concern

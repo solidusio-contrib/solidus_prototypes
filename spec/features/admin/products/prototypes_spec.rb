@@ -1,10 +1,12 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe "Prototypes", type: :feature do
   stub_authorization!
 
   context "listing prototypes" do
-    it "should be able to list existing prototypes" do
+    it "is able to list existing prototypes" do
       create(:property, name: "model", presentation: "Model")
       create(:property, name: "brand", presentation: "Brand")
       create(:property, name: "shirt_fabric", presentation: "Fabric")
@@ -20,15 +22,15 @@ describe "Prototypes", type: :feature do
       create(:property, name: "shirt_type", presentation: "Type")
       p = create(:prototype, name: "Shirt")
       %w(brand gender manufacturer model shirt_fabric shirt_fit shirt_sleeve_length shirt_type).each do |prop|
-        p.properties << Spree::Property.find_by_name(prop)
+        p.properties << Spree::Property.find_by(name: prop)
       end
       p = create(:prototype, name: "Mug")
       %w(mug_size mug_type).each do |prop|
-        p.properties << Spree::Property.find_by_name(prop)
+        p.properties << Spree::Property.find_by(name: prop)
       end
       p = create(:prototype, name: "Bag")
       %w(bag_type bag_material).each do |prop|
-        p.properties << Spree::Property.find_by_name(prop)
+        p.properties << Spree::Property.find_by(name: prop)
       end
 
       visit spree.admin_path
@@ -42,7 +44,7 @@ describe "Prototypes", type: :feature do
   end
 
   context "creating a prototype" do
-    it "should allow an admin to create a new product prototype", js: true do
+    it "allows an admin to create a new product prototype", js: true do
       visit spree.admin_path
       click_nav "Products"
       click_link "Prototypes"
@@ -62,13 +64,13 @@ describe "Prototypes", type: :feature do
   end
 
   context "editing a prototype" do
-    it "should allow to empty its properties" do
+    it "allows to empty its properties" do
       model_property = create(:property, name: "model", presentation: "Model")
       brand_property = create(:property, name: "brand", presentation: "Brand")
 
       shirt_prototype = create(:prototype, name: "Shirt", properties: [])
       %w(brand model).each do |prop|
-        shirt_prototype.properties << Spree::Property.find_by_name(prop)
+        shirt_prototype.properties << Spree::Property.find_by(name: prop)
       end
 
       visit spree.admin_path
@@ -90,7 +92,7 @@ describe "Prototypes", type: :feature do
     end
   end
 
-  it 'should be deletable', js: true do
+  it 'is deletable', js: true do
     shirt_prototype = create(:prototype, name: "Shirt", properties: [])
     shirt_prototype.taxons << create(:taxon)
 
