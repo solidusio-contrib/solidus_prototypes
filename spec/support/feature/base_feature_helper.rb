@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module BaseFeatureHelper
   def click_nav(nav_text, subnav_text = nil)
     primary_nav = find(".admin-nav-menu>ul>li>a", text: /#{nav_text}/i)
@@ -7,4 +9,8 @@ module BaseFeatureHelper
       primary_nav.click
     end
   end
+end
+
+RSpec.configure do |config|
+  config.include BaseFeatureHelper, type: :feature
 end

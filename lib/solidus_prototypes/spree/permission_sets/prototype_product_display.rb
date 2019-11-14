@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Spree
   module PermissionSets
     # Adds all product display permissions, with addition

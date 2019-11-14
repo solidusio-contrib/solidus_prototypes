@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe Spree::PermissionSets::ProductManagement do
-  let(:ability) { DummyAbility.new }
-
   subject { ability }
+
+  let(:ability) { DummyAbility.new }
 
   context "when activated" do
     before do

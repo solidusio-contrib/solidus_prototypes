@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Deface::Override.new(
   virtual_path: "spree/admin/product_properties/index",
   name: "prototypes_product_properties_toolbar",

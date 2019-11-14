@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Deface::Override.new(
   virtual_path: "spree/admin/products/new",
   name: "prototypes_admin_products_new",

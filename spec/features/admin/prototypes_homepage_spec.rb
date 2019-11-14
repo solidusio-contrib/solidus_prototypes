@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe "Homepage with prototypes extension", type: :feature do
@@ -5,11 +7,11 @@ describe "Homepage with prototypes extension", type: :feature do
     stub_authorization!
 
     context "visiting the products tab" do
-      before(:each) do
+      before do
         visit spree.admin_products_path
       end
 
-      it "should have a link to prototypes" do
+      it "has a link to prototypes" do
         within('.selected .admin-subnav') { page.find_link("Prototypes")['/admin/prototypes'] }
       end
     end

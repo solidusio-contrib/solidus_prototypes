@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Spree
   class Prototype < Spree::Base
     has_many :property_prototypes
