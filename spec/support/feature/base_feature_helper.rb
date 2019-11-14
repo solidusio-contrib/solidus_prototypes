@@ -8,3 +8,7 @@ module BaseFeatureHelper
     end
   end
 end
+
+RSpec.configure do |config|
+  config.include BaseFeatureHelper, type: :feature
+end

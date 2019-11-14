@@ -1,27 +1,11 @@
-require "simplecov"
-SimpleCov.start "rails"
+# frozen_string_literal: true
 
-ENV["RAILS_ENV"] ||= "test"
+ENV['RAILS_ENV'] ||= 'test'
 
-require File.expand_path("../dummy/config/environment.rb", __FILE__)
+require 'solidus_extension_dev_tools/rspec/coverage'
 
-require "solidus_support/extension/feature_helper"
+require File.expand_path('dummy/config/environment.rb', __dir__)
 
-require 'cancan/matchers'
-require "spree/testing_support/authorization_helpers"
+require 'solidus_extension_dev_tools/rspec/feature_helper'
 
-Dir[File.join(File.dirname(__FILE__), "support/**/*.rb")].each { |f| require f }
-
-# Requires factories defined in lib/solidus_prototypes/factories.rb
-require 'solidus_prototypes/factories'
-
-Capybara.server = :webrick
-
-RSpec.configure do |config|
-  config.infer_spec_type_from_file_location!
-  config.raise_errors_for_deprecations!
-
-  config.example_status_persistence_file_path = "./spec/examples.txt"
-
-  config.include BaseFeatureHelper, type: :feature
-end
+Dir[File.join(File.dirname(__FILE__), 'support/**/*.rb')].each { |f| require f }
