@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_prototypes/version.rb'
+  message: Bump SolidusPrototypes to %{version}
+  tag: true
