@@ -1,12 +1,17 @@
 # frozen_string_literal: true
 
+require 'spree/core'
+
 module SolidusPrototypes
   class Engine < Rails::Engine
-    require 'spree/core'
-    isolate_namespace Spree
+    include SolidusSupport::EngineExtensions::Decorators
+
+    isolate_namespace ::Spree
+
     engine_name 'solidus_prototypes'
 
     config.autoload_paths += %W(#{config.root}/lib/concerns)
+
     # use rspec for tests
     config.generators do |g|
       g.test_framework :rspec
