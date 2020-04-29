@@ -76,27 +76,21 @@ describe "Products", type: :feature do
       end
     end
 
-    context 'updating a product', js: true do
+    context 'updating product properties', js: true do
       let(:product) { create(:product) }
 
-      let(:prototype) do
-        size = build_option_type_with_values("size", %w(Small Medium Large))
-        FactoryBot.create(:prototype, name: "Size", option_types: [size])
-      end
-
       before do
-        @option_type_prototype = prototype
-        @property_prototype = create(:prototype, name: "Random")
+        create(:prototype, name: "Size")
+        create(:prototype, name: "Random")
       end
 
-      it 'adds option_types when selecting a prototype' do
+      it 'adds properties when selecting from a prototype' do
         visit spree.admin_product_path(product)
         click_link 'Product Properties'
         expect(page).to have_content("Select From Prototype")
         click_link "Select From Prototype"
 
-        row = find('#prototypes tr', text: 'Size')
-        row.click_link 'Select'
+        find('#prototypes tr', text: 'Size').click_link 'Select'
 
         # The following is unfortunate.
         # It is tough to distinguish between the different fields, so we assert
