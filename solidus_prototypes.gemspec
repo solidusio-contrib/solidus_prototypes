@@ -30,7 +30,7 @@ Gem::Specification.new do |s|
   end
 
   s.add_dependency 'deface'
-  s.add_dependency 'solidus_core', ['>= 2.1.0', '< 3']
+  s.add_dependency 'solidus_core', '>= 2.1.0', '< 4'
   s.add_dependency 'solidus_support', '~> 0.4.0'
 
   s.add_development_dependency 'solidus_dev_support'
