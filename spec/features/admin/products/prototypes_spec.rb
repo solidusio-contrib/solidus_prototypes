@@ -45,9 +45,7 @@ describe "Prototypes", type: :feature do
 
   context "creating a prototype" do
     it "allows an admin to create a new product prototype", js: true do
-      visit spree.admin_path
-      click_nav "Products"
-      click_link "Prototypes"
+      visit spree.admin_prototypes_path
       click_link "new_prototype_link"
       within('#new_prototype') do
         expect(page).to have_content("New Prototype")
@@ -96,9 +94,7 @@ describe "Prototypes", type: :feature do
     shirt_prototype = create(:prototype, name: "Shirt", properties: [])
     shirt_prototype.taxons << create(:taxon)
 
-    visit spree.admin_path
-    click_nav "Products"
-    click_link "Prototypes"
+    visit spree.admin_prototypes_path
 
     within("#spree_prototype_#{shirt_prototype.id}") do
       accept_confirm { find('.delete-resource').click }

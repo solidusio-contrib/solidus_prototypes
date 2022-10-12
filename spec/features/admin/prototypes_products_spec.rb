@@ -50,8 +50,7 @@ describe "Products", type: :feature do
         @option_type_prototype = prototype
         @property_prototype = create(:prototype, name: "Random")
         @shipping_category = create(:shipping_category)
-        click_nav "Products"
-        click_link "New Product"
+        visit spree.new_admin_product_path
       end
 
       it "allows an admin to create a new product and variants from a prototype", js: true do
