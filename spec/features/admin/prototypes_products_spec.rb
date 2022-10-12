@@ -50,8 +50,7 @@ describe "Products", type: :feature do
         @option_type_prototype = prototype
         @property_prototype = create(:prototype, name: "Random")
         @shipping_category = create(:shipping_category)
-        click_nav "Products"
-        click_link "New Product"
+        visit spree.new_admin_product_path
       end
 
       it "allows an admin to create a new product and variants from a prototype", js: true do
@@ -110,6 +109,7 @@ describe "Products", type: :feature do
     end
 
     custom_authorization! do |_user|
+      cannot :admin, Spree::Prototype
       can [:admin, :update, :index, :read], Spree::Product
     end
     let!(:product) { create(:product) }
