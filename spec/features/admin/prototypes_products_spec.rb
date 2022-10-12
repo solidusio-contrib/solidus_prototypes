@@ -109,6 +109,7 @@ describe "Products", type: :feature do
     end
 
     custom_authorization! do |_user|
+      cannot :admin, Spree::Prototype
       can [:admin, :update, :index, :read], Spree::Product
     end
     let!(:product) { create(:product) }
