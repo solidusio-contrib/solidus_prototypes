@@ -1,8 +1,8 @@
 # Changelog
 
-## unreleased
+## [v1.1.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.1.0) (2022-10-13)
 
-[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.0.0...v1.2.0)
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.0.0...v1.1.0)
 
 **Closed issues:**
 
@@ -21,6 +21,7 @@
 
 **Merged pull requests:**
 
+- Add a changelog [\#59](https://github.com/solidusio-contrib/solidus_prototypes/pull/59) ([tvdeyen](https://github.com/tvdeyen))
 - Add circleci/browser-tools orb [\#57](https://github.com/solidusio-contrib/solidus_prototypes/pull/57) ([tvdeyen](https://github.com/tvdeyen))
 - Update to use forked solidus\_frontend when needed [\#54](https://github.com/solidusio-contrib/solidus_prototypes/pull/54) ([waiting-for-dev](https://github.com/waiting-for-dev))
 - Support for Solidus 3.0 [\#51](https://github.com/solidusio-contrib/solidus_prototypes/pull/51) ([kennyadsl](https://github.com/kennyadsl))
