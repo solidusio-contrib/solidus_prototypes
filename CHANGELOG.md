@@ -1,8 +1,8 @@
 # Changelog
 
-## [v1.1.1](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.1.1) (2022-10-14)
+## [v1.2.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.2.0) (2022-11-22)
 
-[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.0...v1.1.1)
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.1...v1.2.0)
 
 **Fixed bugs:**
 
@@ -11,6 +11,11 @@
 **Merged pull requests:**
 
 - Keep "Products" submenu open [\#58](https://github.com/solidusio-contrib/solidus_prototypes/pull/58) ([benjaminwil](https://github.com/benjaminwil))
+- Allow Ruby 3.0 [\#55](https://github.com/solidusio-contrib/solidus_prototypes/pull/55) ([tvdeyen](https://github.com/tvdeyen))
+
+## [v1.1.1](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.1.1) (2022-10-14)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.0...v1.1.1)
 
 ## [v1.1.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.1.0) (2022-10-13)
 
