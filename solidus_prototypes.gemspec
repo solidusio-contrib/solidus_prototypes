@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Breaking out prototypes from solidus"
   s.license = "BSD-3-Clause"
 
-  s.required_ruby_version = [">= 2.4", "< 3.1"]
+  s.required_ruby_version = [">= 2.4", "< 3.2"]
 
   s.author = "Graeme Nathan"
   s.email = "graeme@stembolt.com"
@@ -34,4 +34,5 @@ Gem::Specification.new do |s|
   s.add_dependency "solidus_support", "~> 0.4"
 
   s.add_development_dependency "solidus_dev_support"
+  s.add_development_dependency "selenium-webdriver", "< 4.8.2"
 end
