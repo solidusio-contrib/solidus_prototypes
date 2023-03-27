@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.3.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.3.0) (2023-03-27)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.2.0...v1.3.0)
+
+**Merged pull requests:**
+
+- Allow Ruby 3.2 [\#61](https://github.com/solidusio-contrib/solidus_prototypes/pull/61) ([tvdeyen](https://github.com/tvdeyen))
+- Allow Ruby 3.1 [\#60](https://github.com/solidusio-contrib/solidus_prototypes/pull/60) ([tvdeyen](https://github.com/tvdeyen))
+
 ## [v1.2.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.2.0) (2022-11-22)
 
 [Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.1...v1.2.0)
