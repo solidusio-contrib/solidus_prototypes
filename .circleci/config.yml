@@ -10,6 +10,13 @@ orbs:
   solidusio_extensions: solidusio/extensions@volatile
 
 jobs:
+  run-specs-with-postgres-3-2:
+    executor:
+      name: solidusio_extensions/postgres
+      ruby_version: "3.2"
+    steps:
+      - browser-tools/install-chrome
+      - solidusio_extensions/run-tests
   run-specs-with-postgres:
     executor:
       name: solidusio_extensions/postgres
@@ -28,6 +35,7 @@ jobs:
 workflows:
   "Run specs on supported Solidus versions":
     jobs:
+      - run-specs-with-postgres-3-2
       - run-specs-with-postgres
       - run-specs-with-mysql
   "Weekly run specs against master":
@@ -39,5 +47,6 @@ workflows:
               only:
                 - master
     jobs:
+      - run-specs-with-postgres-3-2
       - run-specs-with-postgres
       - run-specs-with-mysql
