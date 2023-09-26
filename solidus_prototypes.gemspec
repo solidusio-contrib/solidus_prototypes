@@ -34,5 +34,4 @@ Gem::Specification.new do |s|
   s.add_dependency "solidus_support", "~> 0.4"
 
   s.add_development_dependency "solidus_dev_support"
-  s.add_development_dependency "selenium-webdriver", "< 4.8.2"
 end
