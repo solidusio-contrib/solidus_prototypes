@@ -3,14 +3,19 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-branch = ENV.fetch('SOLIDUS_BRANCH', 'main')
-solidus_git, solidus_frontend_git = if (branch == 'main') || (branch >= 'v3.2')
+solidus_branch = ENV.fetch('SOLIDUS_BRANCH', 'main')
+solidus_git, solidus_frontend_git = if (solidus_branch == 'main') || (solidus_branch >= 'v3.2')
                                       %w[solidusio/solidus solidusio/solidus_frontend]
                                     else
                                       %w[solidusio/solidus] * 2
                                     end
-gem 'solidus', github: solidus_git, branch: branch
-gem 'solidus_frontend', github: solidus_frontend_git, branch: branch
+solidus_frontend_branch = if (solidus_branch == 'main') || (solidus_branch >= 'v4.1')
+                            "main"
+                          else
+                            solidus_branch
+                          end
+gem 'solidus', github: solidus_git, branch: solidus_branch
+gem 'solidus_frontend', github: solidus_frontend_git, branch: solidus_frontend_branch
 
 # Needed to help Bundler figure out how to resolve dependencies,
 # otherwise it takes forever to resolve them.

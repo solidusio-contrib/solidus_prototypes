@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
 module BaseFeatureHelper
-  def click_nav(nav_text, subnav_text = nil)
-    primary_nav = find(".admin-nav-menu>ul>li>a", text: /#{nav_text}/i)
-    if subnav_text
-      primary_nav.find('+ul>li>a', text: /#{subnav_text}/i).click
+  def click_nav(nav_text)
+    if Spree.solidus_gem_version > Gem::Version.new("4.2")
+      primary_nav = find(".solidus-admin--nav--menu .tab-with-icon", text: /#{nav_text}/i)
     else
-      primary_nav.click
+      primary_nav = find(".admin-nav-menu>ul>li>a", text: /#{nav_text}/i)
     end
+    primary_nav.click
   end
 end
 

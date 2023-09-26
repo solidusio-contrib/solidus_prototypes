@@ -1,15 +1,19 @@
 # frozen_string_literal: true
 
+require 'solidus_support'
+
 module SolidusPrototypes
   module Generators
     class InstallGenerator < Rails::Generators::Base
       class_option :auto_run_migrations, type: :boolean, default: false
 
       def add_javascripts
-        append_file(
-          'vendor/assets/javascripts/spree/frontend/all.js',
-          "//= require spree/frontend/solidus_prototypes\n"
-        )
+        if SolidusSupport.frontend_available?
+          append_file(
+            'vendor/assets/javascripts/spree/frontend/all.js',
+            "//= require spree/frontend/solidus_prototypes\n"
+          )
+        end
         append_file(
           'vendor/assets/javascripts/spree/backend/all.js',
           "//= require spree/backend/solidus_prototypes\n"
@@ -17,12 +21,14 @@ module SolidusPrototypes
       end
 
       def add_stylesheets
-        inject_into_file(
-          'vendor/assets/stylesheets/spree/frontend/all.css',
-          " *= require spree/frontend/solidus_prototypes\n",
-          before: %r{\*/},
-          verbose: true
-        )
+        if SolidusSupport.frontend_available?
+          inject_into_file(
+            'vendor/assets/stylesheets/spree/frontend/all.css',
+            " *= require spree/frontend/solidus_prototypes\n",
+            before: %r{\*/},
+            verbose: true
+          )
+        end
         inject_into_file(
           'vendor/assets/stylesheets/spree/backend/all.css',
           " *= require spree/backend/solidus_prototypes\n",
