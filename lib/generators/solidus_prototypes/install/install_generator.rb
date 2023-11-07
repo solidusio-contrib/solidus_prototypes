@@ -8,12 +8,6 @@ module SolidusPrototypes
       class_option :auto_run_migrations, type: :boolean, default: false
 
       def add_javascripts
-        if SolidusSupport.frontend_available?
-          append_file(
-            'vendor/assets/javascripts/spree/frontend/all.js',
-            "//= require spree/frontend/solidus_prototypes\n"
-          )
-        end
         append_file(
           'vendor/assets/javascripts/spree/backend/all.js',
           "//= require spree/backend/solidus_prototypes\n"
@@ -21,14 +15,6 @@ module SolidusPrototypes
       end
 
       def add_stylesheets
-        if SolidusSupport.frontend_available?
-          inject_into_file(
-            'vendor/assets/stylesheets/spree/frontend/all.css',
-            " *= require spree/frontend/solidus_prototypes\n",
-            before: %r{\*/},
-            verbose: true
-          )
-        end
         inject_into_file(
           'vendor/assets/stylesheets/spree/backend/all.css',
           " *= require spree/backend/solidus_prototypes\n",
