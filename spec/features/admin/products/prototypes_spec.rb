@@ -44,9 +44,9 @@ describe "Prototypes", type: :feature do
   end
 
   context "creating a prototype" do
-    it "allows an admin to create a new product prototype", js: true do
+    it "allows an admin to create a new product prototype" do
       visit spree.admin_prototypes_path
-      click_link "new_prototype_link"
+      click_link I18n.t('spree.new_prototype')
       within('#new_prototype') do
         expect(page).to have_content("New Prototype")
       end
