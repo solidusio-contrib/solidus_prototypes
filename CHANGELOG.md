@@ -1,17 +1,16 @@
 # Changelog
 
-## [v1.3.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.3.0) (2023-03-27)
+## [v1.4.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.4.0) (2023-11-07)
 
-[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.2.0...v1.3.0)
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.3.0...v1.4.0)
 
 **Merged pull requests:**
 
-- Allow Ruby 3.2 [\#61](https://github.com/solidusio-contrib/solidus_prototypes/pull/61) ([tvdeyen](https://github.com/tvdeyen))
-- Allow Ruby 3.1 [\#60](https://github.com/solidusio-contrib/solidus_prototypes/pull/60) ([tvdeyen](https://github.com/tvdeyen))
+- Add Solidus 4.0, 4.1, 4.2 and 4.3 support [\#63](https://github.com/solidusio-contrib/solidus_prototypes/pull/63) ([tvdeyen](https://github.com/tvdeyen))
 
-## [v1.2.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.2.0) (2022-11-22)
+## [v1.3.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.3.0) (2023-03-27)
 
-[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.1...v1.2.0)
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.2.0...v1.3.0)
 
 **Fixed bugs:**
 
@@ -19,8 +18,14 @@
 
 **Merged pull requests:**
 
+- Allow Ruby 3.2 [\#61](https://github.com/solidusio-contrib/solidus_prototypes/pull/61) ([tvdeyen](https://github.com/tvdeyen))
+- Allow Ruby 3.1 [\#60](https://github.com/solidusio-contrib/solidus_prototypes/pull/60) ([tvdeyen](https://github.com/tvdeyen))
 - Keep "Products" submenu open [\#58](https://github.com/solidusio-contrib/solidus_prototypes/pull/58) ([benjaminwil](https://github.com/benjaminwil))
 - Allow Ruby 3.0 [\#55](https://github.com/solidusio-contrib/solidus_prototypes/pull/55) ([tvdeyen](https://github.com/tvdeyen))
+
+## [v1.2.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.2.0) (2022-11-22)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.1.1...v1.2.0)
 
 ## [v1.1.1](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.1.1) (2022-10-14)
 
