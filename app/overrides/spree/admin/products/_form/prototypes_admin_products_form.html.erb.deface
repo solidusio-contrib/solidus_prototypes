@@ -1,6 +1,8 @@
-<div data-hook="new_product_prototype" class="col-3">
+<!-- insert_before '[data-hook="admin_product_form_taxons"]' enabled -->
+<% if f.object.new_record? %>
   <%= f.field_container :prototype do %>
     <%= f.label :prototype_id, Spree::Prototype.model_name.human %><br />
     <%= f.collection_select :prototype_id, Spree::Prototype.all, :id, :name, {:include_blank => true}, {:class => 'custom-select fullwidth'} %>
   <% end %>
-</div>
+  <div id="product-from-prototype"></div>
+<% end %>

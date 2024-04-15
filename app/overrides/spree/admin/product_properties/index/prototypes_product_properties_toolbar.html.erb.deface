@@ -1,3 +1,4 @@
+<!-- insert_bottom 'ul.tollbar' enabled -->
 <li>
   <span id="new_ptype_link">
     <%= link_to I18n.t('spree.select_from_prototype'), available_admin_prototypes_url, :remote => true, :class => 'button fa fa-copy' %>
