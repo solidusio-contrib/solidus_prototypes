@@ -1,0 +1,2 @@
+<!-- insert_after '[data-hook="add_product_properties"]' enabled -->
+<div id='prototypes' data-hook></div>
