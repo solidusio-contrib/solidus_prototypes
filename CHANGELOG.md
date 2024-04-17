@@ -1,12 +1,18 @@
 # Changelog
 
-## [v1.4.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.4.0) (2023-11-07)
+## [v1.5.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.5.0) (2024-04-17)
 
-[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.3.0...v1.4.0)
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.4.0...v1.5.0)
 
 **Merged pull requests:**
 
+- Fix option\_values\_hash form field name name [\#65](https://github.com/solidusio-contrib/solidus_prototypes/pull/65) ([tvdeyen](https://github.com/tvdeyen))
+- Replace Deface Override with Deface DSL [\#64](https://github.com/solidusio-contrib/solidus_prototypes/pull/64) ([sascha-karnatz](https://github.com/sascha-karnatz))
 - Add Solidus 4.0, 4.1, 4.2 and 4.3 support [\#63](https://github.com/solidusio-contrib/solidus_prototypes/pull/63) ([tvdeyen](https://github.com/tvdeyen))
+
+## [v1.4.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.4.0) (2023-11-07)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.3.0...v1.4.0)
 
 ## [v1.3.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.3.0) (2023-03-27)
 
