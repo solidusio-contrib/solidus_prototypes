@@ -5,13 +5,10 @@
 <% content_for :page_actions do %>
   <% if can?(:create, Spree::Prototype) %>
     <li id="new_prototype_link">
-      <%= link_to I18n.t('spree.new_prototype'), new_admin_prototype_url, {:remote => true, :id => 'new_prototype_link'} %>
+      <%= link_to I18n.t('spree.new_prototype'), spree.new_admin_prototype_url, { class: "btn btn-primary" } %>
     </li>
   <% end %>
 <% end %>
-
-<%# Placeholder for new prototype form %>
-<div id="new_prototype_container"></div>
 
 <% if @prototypes.any? %>
 <table class="index" id='listing_prototypes' data-hook>
