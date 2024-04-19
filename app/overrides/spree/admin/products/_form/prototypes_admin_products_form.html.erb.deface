@@ -1,4 +1,4 @@
-<!-- insert_before '[data-hook="admin_product_form_taxons"]' enabled -->
+<!-- insert_top '[data-hook="admin_product_form_left"]' enabled -->
 <% if f.object.new_record? %>
   <%= f.field_container :prototype do %>
     <%= f.label :prototype_id, Spree::Prototype.model_name.human %><br />
