@@ -1,19 +1,30 @@
 # Changelog
 
+## [v1.5.1](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.5.1) (2024-04-19)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.5.0...v1.5.1)
+
+**Merged pull requests:**
+
+- Move prototype selector on top of product form [\#66](https://github.com/solidusio-contrib/solidus_prototypes/pull/66) ([sascha-karnatz](https://github.com/sascha-karnatz))
+
 ## [v1.5.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.5.0) (2024-04-17)
 
 [Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.4.0...v1.5.0)
 
 **Merged pull requests:**
 
+- Admin UI fixes [\#62](https://github.com/solidusio-contrib/solidus_prototypes/pull/62) ([tvdeyen](https://github.com/tvdeyen))
 - Fix option\_values\_hash form field name name [\#65](https://github.com/solidusio-contrib/solidus_prototypes/pull/65) ([tvdeyen](https://github.com/tvdeyen))
 - Replace Deface Override with Deface DSL [\#64](https://github.com/solidusio-contrib/solidus_prototypes/pull/64) ([sascha-karnatz](https://github.com/sascha-karnatz))
-- Add Solidus 4.0, 4.1, 4.2 and 4.3 support [\#63](https://github.com/solidusio-contrib/solidus_prototypes/pull/63) ([tvdeyen](https://github.com/tvdeyen))
-- Admin UI fixes [\#62](https://github.com/solidusio-contrib/solidus_prototypes/pull/62) ([tvdeyen](https://github.com/tvdeyen))
 
 ## [v1.4.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.4.0) (2023-11-07)
 
 [Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.3.0...v1.4.0)
+
+**Merged pull requests:**
+
+- Add Solidus 4.0, 4.1, 4.2 and 4.3 support [\#63](https://github.com/solidusio-contrib/solidus_prototypes/pull/63) ([tvdeyen](https://github.com/tvdeyen))
 
 ## [v1.3.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.3.0) (2023-03-27)
 
