@@ -3,17 +3,15 @@
 module SolidusPrototypes
   module Spree
     module PermissionSets
-      module ProductDisplayDecorator
+      module ProductManagementPatch
 
         def activate!
+          can :manage, ::Spree::Prototype
           super
-          can [:display, :admin], ::Spree::Prototype
         end
 
-        ::Spree::PermissionSets::ProductDisplay.prepend self
+        ::Spree::PermissionSets::ProductManagement.prepend self
       end
     end
   end
 end
-
-
