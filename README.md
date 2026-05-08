@@ -1,7 +1,7 @@
 SolidusPrototypes
 ================
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/solidusio-contrib/solidus_prototypes/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/solidusio-contrib/solidus_prototypes/tree/main)
+[![Test](https://github.com/solidusio-contrib/solidus_prototypes/actions/workflows/test.yml/badge.svg)](https://github.com/solidusio-contrib/solidus_prototypes/actions/workflows/test.yml)
 
 Prototype extension for Solidus.
 
