@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Breaking out prototypes from solidus"
   s.license = "BSD-3-Clause"
 
-  s.required_ruby_version = [">= 3.0", "< 4"]
+  s.required_ruby_version = Gem::Requirement.new('>= 3.0')
 
   s.author = "Graeme Nathan"
   s.email = "graeme@stembolt.com"
@@ -34,5 +34,8 @@ Gem::Specification.new do |s|
   s.add_dependency "solidus_core", [">= 3.2.0", "< 5"]
   s.add_dependency "solidus_support", "~> 0.4"
 
-  s.add_development_dependency "solidus_dev_support"
+  s.add_development_dependency 'rubocop', '~> 1.0'
+  s.add_development_dependency 'rubocop-performance', '~> 1.5'
+  s.add_development_dependency 'rubocop-rails', '~> 2.3'
+  s.add_development_dependency 'rubocop-rspec', '~> 2.0'
 end

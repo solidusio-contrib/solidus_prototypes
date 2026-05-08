@@ -19,7 +19,7 @@ module SolidusPrototypes
         @prototype = Spree::Prototype.find(params[resource][:prototype_id])
       end
 
-      ::Spree::Admin::ProductsController.prepend self
+      ::Spree::Admin::ProductsController.prepend self if defined? ::Spree::Admin::ProductsController
     end
   end
 end
