@@ -2,7 +2,7 @@
 
 module SolidusPrototypes
   module Spree
-    module TaxonDecorator
+    module TaxonPatch
 
       def self.prepended(base)
         base.class_eval do

@@ -2,7 +2,7 @@
 
 module SolidusPrototypes
   module Spree
-    module ProductDecorator
+    module ProductPatch
 
       def self.prepended(base)
         base.class_eval do

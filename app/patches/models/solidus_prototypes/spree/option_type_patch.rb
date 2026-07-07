@@ -2,7 +2,7 @@
 
 module SolidusPrototypes
   module Spree
-    module OptionTypeDecorator
+    module OptionTypePatch
 
       def self.prepended(base)
         base.class_eval do
