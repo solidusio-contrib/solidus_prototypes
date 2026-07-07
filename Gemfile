@@ -13,8 +13,6 @@ gem 'rails', '>0.a'
 
 # Provides basic authentication functionality for testing parts of your engine
 gem 'solidus_auth_devise'
-gem 'solidus_dev_support', github: "solidusio/solidus_dev_support", branch: "main"
-gem 'solidus_support', github: "mamhoff/solidus_support", branch: "re-enable-flickwerk"
 
 gem 'flickwerk'
 
