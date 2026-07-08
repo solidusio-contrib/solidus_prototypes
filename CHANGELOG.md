@@ -1,5 +1,15 @@
 # Changelog
 
+## [v1.7.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.7.0) (2026-07-08)
+
+[Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.6.0...v1.7.0)
+
+**Merged pull requests:**
+
+- feat: Allow Ruby 4.0 [\#71](https://github.com/solidusio-contrib/solidus_prototypes/pull/71) ([tvdeyen](https://github.com/tvdeyen))
+- chore: Fix reloading in dev mode [\#70](https://github.com/solidusio-contrib/solidus_prototypes/pull/70) ([tvdeyen](https://github.com/tvdeyen))
+- Use flickwerk to load patches [\#69](https://github.com/solidusio-contrib/solidus_prototypes/pull/69) ([tvdeyen](https://github.com/tvdeyen))
+
 ## [v1.6.0](https://github.com/solidusio-contrib/solidus_prototypes/tree/v1.6.0) (2024-05-30)
 
 [Full Changelog](https://github.com/solidusio-contrib/solidus_prototypes/compare/v1.5.1...v1.6.0)
